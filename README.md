@@ -16,11 +16,13 @@ Including genomic variants on Electronic Medical Records (EMR) will improve pati
  
 TDB
  
-# Methods: Workflow
+# Methods:
+
+### Workflow
  
 ![RNAseq_WorkFlow](/RNAseq_WorkFlow.png)
  
-# Methods: Identification of RNAseq Variants of interest
+### Identification of RNAseq Variants of interest
  
 To provide researchers and clinicians with relevant data, only RNA sequence variants associated with chronic illness and viral infection were considered.  These RNA sequence variants were identified with two methods.
  
@@ -30,11 +32,11 @@ Second, RNA sequence variants were identified as genetic differences between con
  
 RNA sequence variants between both identification methods were pooled.  The authors acknowledge that this is not a comprehensive list of variants associated with viral infections and chronic illnesses but instead will use the identified variants as a proof of concept.
  
-# Methods: Selected Nomenclature
+### Selected Nomenclature
  
 Previous proponents of including genomic variants on EMR propose including both the variants common and technical (better word for technical?) names (Ohno-Machado et al., 2018). The common name will be easily recognized and it is the nomenclature clinicians are familiar with. The technical name will increase the computability of the information and conform to standards developed by the Human Genome Variation Society (HGVS), Human Genome Organization Gene Nomenclature Committee, and the Human Variome Project
 (den Dunnen et al., 2016).  Thus using two names increases the usability of the data to both clinicians and scientists.  Therefore our selected nomenclature includes both common and technical names.
  
-# Methods: Inclusion of genomic data into Electronic Medical Records
+### Inclusion of genomic data into Electronic Medical Records
  
 TBD
