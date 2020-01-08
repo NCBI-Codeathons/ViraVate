@@ -14,7 +14,7 @@ Including genomic variants on Electronic Medical Records (EMR) will improve pati
  
 # Dependencies:
  
-TDB
+TDB :expressionless:
  
 # Methods:
 
@@ -39,4 +39,4 @@ Previous proponents of including genomic variants on EMR propose including both 
  
 ### Inclusion of genomic data into Electronic Medical Records
  
-TBD
+TBD :expressionless:
