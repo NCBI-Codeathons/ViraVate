@@ -18,7 +18,7 @@ TDB
  
 # Methods: Workflow
  
-![Current Workflow](/Clinical-RNAseq)
+![RNAseq_WorkFlow](/RNAseq_WorkFlow.png)
  
 # Methods: Identification of RNAseq Variants of interest
  
