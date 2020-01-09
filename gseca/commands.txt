@@ -1,0 +1,17 @@
+if family == false:
+
+python parse.py up.gmt up_mod.gmt
+
+python parse.py down.gmt down_mod.gmt
+
+python concatenate_up_down.py up_mod.gmt down_mod.gmt combined.gmt
+
+if family == true, add the following:
+
+python generate_family.py up_mod.gmt up_family.gmt attribute_list_entries.csv up
+
+python generate_family.py down_mod.gmt down_family.gmt attribute_list_entries.csv down
+
+python concatenate_family.py up_family.gmt down_family.gmt combined_family.gmt
+
+cat combined.gmt combined_family.gmt > combined.gmt
