@@ -5,15 +5,17 @@ RNAseq Reporting Designed for Clinical Deliverability
 
 ViraVate is a straightfoward way to understand if there are differences in viral infection derived variants in the data you already have.  The only necessary inputs are your data.  No viral infection derived variants knowledge required, but if you have genetic variants you are interested in, this can be input to the code.
 
-# Installation Options:
+# How to ger ViraVate (i.e., installation instructions):
 
 ### Docker?
 
 ### Installing ViraVate from Github
 
-1. <pre><code>git clone https://github.com/NCBI-Codeathons/Clinical-RNAseq.git
+1.
+<pre><code>git clone https://github.com/NCBI-Codeathons/Clinical-RNAseq.git
 </code></pre>
-[] 2. Anything else?
+2.
+[]Anything else?
 
 ### Configuration
 
