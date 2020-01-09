@@ -90,8 +90,8 @@ res = applyGSECA(gene_expression_matrix,
 
 # Modify outputs
 result_dir = res$analysis
-input_file = cat(result_dir, '/gseca.csv')
-output_file = cat(result_dir, '/viravate_output.csv')
-call_dataclean = cat('python james_proxy.py', input_file, output_file)
+input_file = paste(result_dir, '/gseca.csv', sep = '')
+output_file = paste(result_dir, '/viravate_output.csv', sep = '')
+call_dataclean = paste('python interpret.py', input_file, output_file)
 system(call_dataclean)
 
