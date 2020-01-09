@@ -1,7 +1,17 @@
 # Clinical-RNAseq
 RNAseq Reporting Designed for Clinical Deliverability
  
-# Structions for Use:
+# Instrucitons for Use:
+
+If not including a Results section, include this section. Examples of input and output files should be provided with some explanatory context. Any novel or complex variable parameters should be explained in sufficient detail to enable users to understand and use the tool's functionality. 
+
+X requires two inputs from the user.  The first input is a gene expression matrix from a study containing two groups (Fig #).  The second input is a key to indicate which data belongs to a ‘control’ versus the ‘experimental’ group (Fig #).  While the author provided compilation of variants of interest, there is an optional input for the user to include additional genetic variants.
+
+Fig. # <Image of an input gene expression matrix>
+Fig. # <Image of an input group key>
+
+The output of X will indicate significantly different viral infection derived variants between the control and experimental groups (Fig. #).
+
 
 # Introduction:
  
