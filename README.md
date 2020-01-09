@@ -21,7 +21,7 @@ ViraVate is a straightfoward way to understand if there are differences in viral
 
 ViraVate takes inputs of (1) a gene expression matrix from a study containing two groups and (2) a key to indicate which data belongs to a ‘control’ versus the ‘experimental’ group.  The output of ViraVate is a list of the viral infection derived variants between the control and experimental groups.  
 
-![UserInterfaceFlowChart](/UserInterfaceFlowChart.png)
+![UserInterfaceFlowChart](Figures/UserInterfaceFlowChart.png)
 
 ViraVate requires two inputs from the user.  The first input is a gene expression matrix from a study containing two groups (Fig #).  The second input is a key to indicate which data belongs to a ‘control’ versus the ‘experimental’ group (Fig #).  While the author provided compilation of variants of interest, there is an optional input for the user to include additional genetic variants.
 
