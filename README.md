@@ -1,7 +1,7 @@
 # Clinical-RNAseq
 RNAseq Reporting Designed for Clinical Deliverability
  
-# Instrucitons for Use:
+# Instructions for Use:
 
 If not including a Results section, include this section. Examples of input and output files should be provided with some explanatory context. Any novel or complex variable parameters should be explained in sufficient detail to enable users to understand and use the tool's functionality. 
 
