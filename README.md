@@ -1,6 +1,8 @@
 # Clinical-RNAseq
 RNAseq Reporting Designed for Clinical Deliverability
  
+# Structions for Use:
+
 # Introduction:
  
 Viral derived genome variants can provide clinicians with critical information about patient risk, which could better inform medical screenings and preventative lifestyle changes.  The prevalence of Electronic Medical Records (EMR) could be used to provide clinicians with relevant genomic variants.
