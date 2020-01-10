@@ -61,7 +61,7 @@ cat('--ags does not exists:',is.null(arguments$ags),'\n')
 ###################################### MAIN BODY ############################################
 
 
-setwd('/home/svprice/Dropbox/Codeathon/GSECA/')
+setwd('/GSECA/')
 
 source("Scripts/config.R")
 
@@ -92,6 +92,6 @@ res = applyGSECA(gene_expression_matrix,
 result_dir = res$analysis
 input_file = paste(result_dir, '/gseca.csv', sep = '')
 output_file = paste(result_dir, '/viravate_output.csv', sep = '')
-call_dataclean = paste('python interpret.py', input_file, output_file)
+call_dataclean = paste('interpret.py', input_file, output_file)
 system(call_dataclean)
 
