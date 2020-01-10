@@ -1,0 +1,16 @@
+# Information about the RNA-Seq DE pipelines/data
+
+- All data were downloaded January 8-10, 2020 
+- Searches were conducted via NCBI SRA database and selected based on the following criteria:
+	- homo sapiens
+	- infection of infectious candidate vs control (often referred to as the 'mock' infection)	
+	- raw count data had to be available
+
+- All data were then run with edgeR (see edgeR script) with the exact same parameters
+- Some candidate infectious datasets were split and run in accordance with the experimental design of the original experiment. Each infectious candidate has a README that will link the url of the GEO dataset, list the GEO ID, and summarize the differential expression design. 
+
+- All DE testing was conducted with the infected as the first test mate. For example, when inputting data it was infected vs control. Therefore, a positive log2FC value would correlate with higher expression in infected and lower in control. 
+
+- Any timestamped data set (ie., 0, 24, 72 hrs post infection): these were pooled and all labeled as 'infected' and were treated like replicates. This may need to be altered if this isn't the best way to do it. 
+
+*****SEPSIS DATASET contains questionable counts. Some rows contain non integer values so we can't confidently say that what we have is valid for the rest. The heatmap samples are also not clustering well so we've decided not to include it at all but the work can still be found here. 
