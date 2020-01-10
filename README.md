@@ -7,19 +7,25 @@ ViraVate ("vee-rah-vah-tey") is a command-line tool to identify whether differen
 
 With ViraVate, you have a simple and fast solution to identify viral infection derived variants in data you already have. 
 
-# How to ger ViraVate (i.e., installation instructions):
+# How to set up ViraVate:
 
 ### Docker
 
-If you do not already have Docker installed, please install it with the [instructions here](https://docs.docker.com/install/).
+ViraVate is powered with Docker. If you do not already have Docker installed, please install it with the [instructions here](https://docs.docker.com/install/).
 
-### Installing ViraVate from Github
+### Installing ViraVate
 
-1.
+1. Set up ViraVate Docker Container
+
+Once you have Docker set up, run the following command:
+
+```console
+$ docker pull virushunter/base_viravate:latest
+```
+
+2. 
 <pre><code>git clone https://github.com/NCBI-Codeathons/Clinical-RNAseq.git
 </code></pre>
-2.
-[]Anything else?
 
 ### Configuration
 
