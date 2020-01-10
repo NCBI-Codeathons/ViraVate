@@ -41,8 +41,6 @@ Note that all these files must be in the same directory as viravate.sh.
 $ viravate.sh -e small_m.tsv -c small_l.tsv -g cereda.158.KEGG.gmt
 ```
 
-### Configuration
-
 # How to use ViraVate:
 
 ViraVate takes inputs of (1) a gene expression matrix from a study containing two groups and (2) a key to indicate which data belongs to a ‘control’ versus the ‘experimental’ group.  The output of ViraVate is a list of the viral infection derived variants between the control and experimental groups.  
@@ -63,5 +61,4 @@ The output of X will indicate significantly different viral infection derived va
 
 [] Fig. # <Image of output of ViraVate>
 
-# Additional Functionality? 
 
