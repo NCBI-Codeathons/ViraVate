@@ -46,6 +46,8 @@ $ viravate.sh -e small_m.tsv -c small_l.tsv -g cereda.158.KEGG.gmt
 
 # How to use ViraVate:
 
+![ViraVateStructure](Figures/UnserInterfaceFlowChartV2.png)
+
 ViraVate requires as input files:
 
 -  Gene expression matrix (".tsv", tab separated): matrix of normalized gene expression levels from RNA-seq experiments. Rows represent genes, columns represent samples and the corresponding expression levels. The first column must contain gene symbols, thus the first row must contain the label "symbol" followed by sample identifiers (e.g. barcodes). 
@@ -85,8 +87,7 @@ NCF4         0.78         0.95         0.77         0.77 ...
 
 This example is inspired by GSECA. [1]
 
-# Methods: Implimentation
-# Results
+# RNAseq Analysis
 
 ViraVate represents an infrastructure that allows researchers to determine if control and experimental groups have different viral infection derived variants.  Having clear genetic variants of interest will facilitate longitudinal studies that can methodologically quantify the association between viral infection and future health complications.
 
@@ -101,6 +102,8 @@ Performing a PCA analysis on the genes that had a large and significant change i
 Heat maps of the top 50 genes from the first component of the  PCA analysis indicate that there are clear differences in gene expression between infected and controls for some (e.g., hep3, pasnfalcip) but not all infections. This could suggest that not all infections changes gene expression or that gene expression may only be changed in a subset of individuals.
 
 ![HeatMapsV2](Figures/HeatMapsV2.png)
+
+![venndiagram](Figures/venndiagram.png)
 
 # Additional Functionality? 
 
