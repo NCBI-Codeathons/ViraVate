@@ -52,7 +52,7 @@ Options:
 
 gem=Sys.getenv("GEM")
 ccl=Sys.getenv("CCL")
-gsl="/Clinical-RNAseq/gseca/combined.gmt"
+gsl="/ViruVate/gseca/combined.gmt"
 ags=Sys.getenv("AGS")
 
 cat('gene_expression_matrix:',gem,'\n')
