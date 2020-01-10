@@ -5,8 +5,8 @@ import sys
 path = sys.argv[1]
 
 for filename in os.listdir(path):
-	out_file_m = open(filename.rsplit('.', 1)[0] + "_M.gmt", 'w')
-	out_file_l = open(filename.rsplit('.', 1)[0] + "_L.gmt", 'w')
+	out_file_m = open(filename.rsplit('.', 1)[0] + "_M.tsv", 'w')
+	out_file_l = open(filename.rsplit('.', 1)[0] + "_L.tsv", 'w')
 	line = open(path + "/" + filename).readline().rstrip('\n').split('\t')
 	for case in line:
 		if case == "infected":
