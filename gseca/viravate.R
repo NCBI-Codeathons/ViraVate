@@ -74,7 +74,8 @@ source("Scripts/config.R")
 # Gene set list
 gene_sets = read.gmt.file(gsl)
 
-if (!is.null(ags)) {
+#if (!is.null(ags)) {
+if (ags != "NULL") {
   # additional user-defined gene sets
   
   # code to combine user-provided <ags> .gmt file with <gene_expression_matrix>
