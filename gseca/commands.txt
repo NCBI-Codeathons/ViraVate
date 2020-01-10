@@ -4,7 +4,9 @@ python parse.py up.gmt up_mod.gmt
 
 python parse.py down.gmt down_mod.gmt
 
-python concatenate_up_down.py up_mod.gmt down_mod.gmt combined.gmt
+python concatenate_up_down.py up_mod.gmt down_mod.gmt combined_geo.gmt
+
+python format.py C:/pghacks/Clinical-RNAseq/gseca/RNASeq_ViraVate_data/genelists combined_manual.gmt  
 
 if family == true, add the following:
 
@@ -14,4 +16,4 @@ python generate_family.py down_mod.gmt down_family.gmt attribute_list_entries.cs
 
 python concatenate_family.py up_family.gmt down_family.gmt combined_family.gmt
 
-cat combined.gmt combined_family.gmt > combined.gmt
+cat combined_manual.gmt combined_geo.gmt combined_family.gmt > combined.gmt
