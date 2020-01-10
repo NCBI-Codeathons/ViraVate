@@ -58,8 +58,8 @@ ags=Sys.getenv("AGS")
 cat('gene_expression_matrix:',gem,'\n')
 cat('case_ctrl_list:',ccl,'\n')
 cat('gene_sets:',gsl,'\n')
-cat('additional_gene_set:',arguments$ags,'\n')
-cat('--ags does not exists:',is.null(arguments$ags),'\n')
+cat('additional_gene_set:',ags,'\n')
+cat('--ags does not exists:',is.null(ags),'\n')
 
 
 
