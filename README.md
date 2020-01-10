@@ -46,23 +46,44 @@ $ viravate.sh -e small_m.tsv -c small_l.tsv -g cereda.158.KEGG.gmt
 
 # How to use ViraVate:
 
-ViraVate takes inputs of (1) a gene expression matrix from a study containing two groups and (2) a key to indicate which data belongs to a ‘control’ versus the ‘experimental’ group.  The output of ViraVate is a list of the viral infection derived variants between the control and experimental groups.  
+ViraVate requires as input files:
 
-![UserInterfaceFlowChartV2](Figures/UserInterfaceFlowChartV2.png)
+-  Gene expression matrix (".tsv", tab separated): matrix of normalized gene expression levels from RNA-seq experiments. Rows represent genes, columns represent samples and the corresponding expression levels. The first column must contain gene symbols, thus the first row must contain the label "symbol" followed by sample identifiers (e.g. barcodes). 
+```
+gene_name TCGA.YL.A8HL TCGA.EJ.5516 TCGA.KK.A8IC TCGA.EJ.7314 ...
+ZIC2        12.37        23.16        11.61        13.97 ...
+RIN2         0.01         0.13         0.03         0.00 ...
+MARS        23.83        24.07        32.79        21.10 ...
+ENC1         4.69         4.92         2.76         2.48 ...
+NCF4         0.78         0.95         0.77         0.77 ...
+...
 
-ViraVate requires two inputs from the user.  The first input is a gene expression matrix from a study containing two groups (Fig #).  The second input is a key to indicate which data belongs to a ‘control’ versus the ‘experimental’ group (Fig #).  While the author provided compilation of variants of interest, there is an optional input for the user to include additional genetic variants.
+```
 
-[] Fig. # <Image of an input gene expression matrix>
-[] Fig. # <Image of an input group key>
+-  Sample type labels (".tsv", tab separated): an ordered list of phenotype labels (CASE / CNTR), one per row matching the order of samples given in the gene expression matrix. The first row must contain the label "x".
+
+```
+[1]
+"CASE"
+"CASE"
+....
+"CNTR"
+"CNTR"
+...
+
+```
+
+-  Additional Gene sets (".gmt" file): the list of gene sets to be tested. It can be predefined by the user, or selected from a collection of pre-processed gene sets of biological pathways and diseases included in the Shiny app.
+
+```
+"gene_set_A" "geneA" "geneB" "geneC" "geneD" ...
+"gene_set_B" "geneE" "geneF" "geneB" "geneG"...
+"gene_set_C" "geneA" "geneF" "geneH" "geneI" ...
+...
  
- Running ViraVate is easily run with the following line(s) of code in <R?>:
- 
-<pre><code>This is a code block.
-</code></pre>
+```
 
-The output of X will indicate significantly different viral infection derived variants between the control and experimental groups (Fig. #).
-
-[] Fig. # <Image of output of ViraVate>
+This example is inspired by GSECA. [1]
 
 # Methods: Implimentation
 # Results
@@ -83,3 +104,10 @@ Heat maps of the top 50 genes from the first component of the  PCA analysis indi
 
 # Additional Functionality? 
 
+
+
+
+
+References:
+
+[1] Andrea Lauria, Serena Peirone, Marco Del Giudice, Francesca Priante, Prabhakar Rajan, Michele Caselle, Salvatore Oliviero, Matteo Cereda, Identification of altered biological processes in heterogeneous RNA-sequencing data by discretization of expression profiles, Nucleic Acids Research, , gkz1208, https://doi.org/10.1093/nar/gkz1208
