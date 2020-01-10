@@ -108,8 +108,6 @@ Here you can see the differentially expressed genes for three different infectio
 https://www.disgenet.org/home/
 ![shared_genes.001](Figures/shared_genes.001.jpeg)
 
-# Additional Functionality
-
-References:
+# References
 
 [1] Andrea Lauria, Serena Peirone, Marco Del Giudice, Francesca Priante, Prabhakar Rajan, Michele Caselle, Salvatore Oliviero, Matteo Cereda, Identification of altered biological processes in heterogeneous RNA-sequencing data by discretization of expression profiles, Nucleic Acids Research, , gkz1208, https://doi.org/10.1093/nar/gkz1208
