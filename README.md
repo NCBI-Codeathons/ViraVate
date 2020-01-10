@@ -3,7 +3,9 @@ RNAseq Reporting Designed for Clinical Deliverability
  
 # Why use ViraVate?
 
-ViraVate ("vee-rah-vah-tey") is a straightfoward way to understand if there are differences in viral infection derived variants in the data you already have.  The only necessary inputs are your data.  No viral infection derived variants knowledge required, but if you have genetic variants you are interested in, this can be input to the code.
+ViraVate ("vee-rah-vah-tey") is a command-line tool to identify whether differences between a user-provided gene expression matrix of any case vs. control (e.g. diabetics vs. non-diabetics) are associated with differentially expressed genes in infected vs. uninfected groups across a database of human-viral infections.
+
+With ViraVate, you have a simple and fast solution to identify viral infection derived variants in data you already have. 
 
 # How to ger ViraVate (i.e., installation instructions):
 
