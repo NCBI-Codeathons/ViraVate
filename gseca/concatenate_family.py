@@ -30,13 +30,13 @@ for i in range(len(up_lines)):
 	up_line = up_lines[i]
 	down_line = down_lines[i]
 	line = ""
-	for content in up_line:
+	for content in down_line:
 		line = line + content + '\t'
 	line.rstrip('\t')
 	line = line + "\n"
 	mod.write(line)
 	line = ""
-	for content in down_line:
+	for content in up_line:
 		line = line + content + '\t'
 	line.rstrip('\t')
 	line = line + "\n"
