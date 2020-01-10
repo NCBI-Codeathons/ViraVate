@@ -95,7 +95,7 @@ Using 10 infections cases we have first visualized all genes with volcano plots.
 
 ![Volcano](Figures/Volcano.png)
 
-Performing a PCA analysis on the genes that had a large and significant change in magnitude.  The first two components of the PCA analysis vidualized below.  Note that some infected and control groups are clearly separated, whereas other infected groups are not very different from the control groups. 
+Performing a PCA analysis on the genes that had a large and significant change in magnitude.  The first two components of the PCA analysis visualized below.  Note that some infected and control groups are clearly separated, whereas other infected groups are not very different from the control groups. 
 
 ![PCA](Figures/PCA.png)
 
@@ -105,11 +105,7 @@ Heat maps of the top 50 genes from the first component of the  PCA analysis indi
 
 ![venndiagram](Figures/venndiagram.png)
 
-# Additional Functionality? 
-
-
-
-
+# Additional Functionality
 
 References:
 
