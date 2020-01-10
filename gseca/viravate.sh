@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# GEM=/home/results/$1
-# CCL=/home/results/$2
-# AGS=/home/results/$3
 
 while getopts ":e:c:g:" OPTION; do
     case "$OPTION" in
@@ -33,7 +30,9 @@ if [ -z "$GEM" ] || [ -z "$CCL" ] || [ -z "$AGS" ]; then
     exit 1;
 fi
 
+GEM=/home/results/$GEM
+CCL=/home/results/$CCL
+AGS=/home/results/$AGS
 docker run --env GEM=$GEM --env CCL=$CCL --env AGS=$AGS -v $(PWD):/home/results virushunter/base_viravate
 #docker run --env GEM=$GEM --env CCL=$CCL --env GSL=$GSL -v $(PWD):/home/results virushunter/base_viravate
 
-exit 0;

@@ -43,14 +43,14 @@ RUN pip3 install numpy pandas
 
 RUN git clone https://github.com/matteocereda/GSECA.git
 
-ADD https://api.github.com/repos/NCBI-Codeathons/Clinical-RNAseq/git/refs/heads/master version.json
-RUN git clone https://github.com/NCBI-Codeathons/Clinical-RNAseq
+ADD https://api.github.com/repos/NCBI-Codeathons/ViruVate/git/refs/heads/master version.json
+RUN git clone https://github.com/NCBI-Codeathons/ViruVate
 
-ENV PATH "$PATH:/Clinical-RNAseq/gseca"
+ENV PATH "$PATH:/ViruVate/gseca"
 
-#CMD echo $GEM && echo $CCL && echo $GSL && ls -lR /home/results 
+#CMD echo $GEM && echo $CCL && echo $AGS && ls -lR /home/results \
 CMD cd /GSECA \
-  && Rscript /Clinical-RNAseq/gseca/viravate.R > viravate.out 2> viravate.err \
+  && Rscript /ViruVate/gseca/viravate.R \
   && rm Results/*analysis/*rds \
   && mv viravate.out viravate.err Results/*analysis/* /home/results
 
