@@ -9,7 +9,9 @@ With ViraVate, you have a simple and fast solution to identify viral infection d
 
 # How to ger ViraVate (i.e., installation instructions):
 
-### Docker?
+### Docker
+
+If you do not already have Docker installed, please install it with the [instructions here](https://docs.docker.com/install/).
 
 ### Installing ViraVate from Github
 
