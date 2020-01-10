@@ -59,7 +59,7 @@ cat('gene_expression_matrix:',gem,'\n')
 cat('case_ctrl_list:',ccl,'\n')
 cat('gene_sets:',gsl,'\n')
 cat('additional_gene_set:',ags,'\n')
-cat('--ags does not exists:',is.null(ags),'\n')
+#cat('--ags does not exists:',is.null(ags),'\n')
 
 
 
@@ -78,7 +78,7 @@ if (!is.null(ags)) {
   # additional user-defined gene sets
   
   # code to combine user-provided <ags> .gmt file with <gene_expression_matrix>
-  ags = read.gmt.file(arguments$ags)
+  ags = read.gmt.file(ags)
   gene_sets = c(gene_sets,ags)
   
 }
