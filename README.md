@@ -9,6 +9,8 @@ With ViraVate, you have a simple and fast solution to identify viral infection d
 
 # How to set up ViraVate:
 
+![ViraVateStructure](Figures/code_structure_for_readme.png)
+
 ### Docker
 
 ViraVate is powered with Docker. If you do not already have Docker installed, please install it with the [instructions here](https://docs.docker.com/install/).
@@ -23,9 +25,21 @@ Once you have Docker set up, run the following command:
 $ docker pull virushunter/base_viravate:latest
 ```
 
-2. 
+2. Clone the repository
 <pre><code>git clone https://github.com/NCBI-Codeathons/Clinical-RNAseq.git
 </code></pre>
+
+3. Run viravate.sh with the three arguments (gene_expression_matrix, case_control_list, additional_gene_sets). The following example shows how to run ViraVate with: <br/>
+
+gene_expression_matrix = "small_m.tsv" <br/>
+case_control_list = "small_l.tsv" <br/>
+additional_gene_sets= "cereda.158.KEGG.gmt" <br/>
+
+Note that all these files must be in the same directory as viravate.sh.
+
+```console
+$ viravate.sh -e small_m.tsv -c small_l.tsv -g cereda.158.KEGG.gmt
+```
 
 ### Configuration
 
