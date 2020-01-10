@@ -106,7 +106,7 @@ Heat maps of the top 50 genes from the first component of the  PCA analysis indi
 Here you can see the differentially expressed genes for three different infections. Note the we identified several differentially expressed genes that were common to all three infections.
 
 https://www.disgenet.org/home/
-![venndiagram](Figures/shared_genes.001.png)
+![shared_genes.001](Figures/shared_genes.001.jpeg)
 
 # Additional Functionality
 
