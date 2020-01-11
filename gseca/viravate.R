@@ -54,6 +54,7 @@ gem=Sys.getenv("GEM")
 ccl=Sys.getenv("CCL")
 gsl="/ViraVate/gseca/combined.gmt"
 ags=Sys.getenv("AGS")
+noviral=Sys.getenv("NOVIRAL")
 
 cat('gene_expression_matrix:',gem,'\n')
 cat('case_ctrl_list:',ccl,'\n')
@@ -67,12 +68,15 @@ cat('additional_gene_set:',ags,'\n')
 ###################################### MAIN BODY ############################################
 
 
-setwd('/GSECA/')
+#setwd('/GSECA/')  # not needed since set in Dockerfile
 
 source("Scripts/config.R")
 
 # Gene set list
-gene_sets = read.gmt.file(gsl)
+gene_sets = vector(mode="list",length=0)
+if (noviral == 0) {
+  gene_sets = c(gene_sets, read.gmt.file(gsl))
+}
 
 #if (!is.null(ags)) {
 if (ags != "NULL") {
