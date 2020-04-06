@@ -93,7 +93,7 @@ This example is inspired by GSECA. [1]
 
 ViraVate outputs a tabular file containing the virus names, directionality p values (up or down in expression) and a logical significance value. 
 
-![output](Figures/viravate_output.png)
+![output](Figures/viravate_out.png)
 
 For a sample dataset, we sampled the output and tallied the virus names.
 
