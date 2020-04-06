@@ -93,7 +93,7 @@ This example is inspired by GSECA. [1]
 
 ViraVate outputs a tabular file containing the virus names, directionality p values (up or down in expression) and a logical significance value. 
 
-![viravate_out](Figures/viravate_out.png)
+![viravate_out](Figures/viravate_out.pdf)
 
 # RNAseq Analysis
 
@@ -115,7 +115,9 @@ Raw counts from two hepatitis C infected studies were retrieved from NCBI GEO da
 
 https://www.disgenet.org/home/
 
-![rheum_arth_intersection](Figures/rheum_athrit_intersection.png)
+
+
+![rheum_arth_intersection](Figures/rheum_athrit_intersection.pdf)
 
 
 
