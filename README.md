@@ -94,31 +94,31 @@ This example is inspired by GSECA. [1]
 ViraVate outputs a tabular file containing the virus names, directionality p values (up or down in expression) and a logical significance value. 
 
 ```
-virus_name	                                          up_pv	               down_pv	           significant
-A ca 04 2009 4daymoi-10^3 none gse37569	             0.182096096	         0.00101882	        FALSE
-A ca 04 2009 4daymoi-10^4 none gse37569	             0.177131874		        3.70E-05		         FALSE
-A ca 04 2009 4daymoi-10^5 none gse37569	             0.36438058		         0.001060413		      FALSE
-A ca 04 2009 4daymoi-10^6 none gse37569	             0.208783242		        0.000346701		      FALSE
-A ca 04 2009 7daymoi-10^3 none gse37566              0.005354735		        9.02E-05		         TRUE
-A ca 04 2009 7daymoi-10^4 none gse37569	             0.386095148		        0.000233933		      FALSE
-A ca 04 2009 7daymoi-10^5 none gse37569	             0.025806355		        4.17E-07		         FALSE
-A ca 04 2009 7daymoi-10^6 none gse37569	             7.29E-05		           0.037920773	      	FALSE
-A-ca-04-2009(h1n1) 0hour 23935999 gse47960	          0.000940501		        0.039112895	      	FALSE
-A-ca-04-2009(h1n1) 0hour 23935999 gse47961	          0.009917667		        0.28345672        	FALSE
-A-ca-04-2009(h1n1) 0hour 23935999 gse47962	          0.015496869		        0.263600009		      FALSE
-A-ca-04-2009(h1n1) 0hour none gse37571	              5.36E-07		           0.000585588		      TRUE
-A-ca-04-2009(h1n1) 0hour none gse40844	              0.036352714		        0.000331258		      FALSE
-A-ca-04-2009(h1n1) 12hour 23935999 gse47960	         0.179740369		        0.059438238		      FALSE
-A-ca-04-2009(h1n1) 12hour 23935999 gse47961	         0.017764542		        0.099488749		      FALSE
-A-ca-04-2009(h1n1) 12hour 23935999 gse47962	         0.022740275		        0.006435738		      FALSE
-A-ca-04-2009(h1n1) 12hour none gse37571	             0.209617411		        0.040131349		      FALSE
-A-ca-04-2009(h1n1) 12hour none gse40844	             0.076780207		        0.149770017		      FALSE
-A-ca-04-2009(h1n1) 18hour 23935999 gse47960	         0.073484711		        0.122512059		      FALSE
-A-ca-04-2009(h1n1) 18hour 23935999 gse47962	         0.14957818		         0.48625422		       FALSE
-A-ca-04-2009(h1n1) 18hour none gse37571	             0.109838766		        0.00342517		       FALSE
-A-ca-04-2009(h1n1) 24hour 23935999 gse47960	         0.045645781		        0.009625315		      FALSE
-A-ca-04-2009(h1n1) 24hour 23935999 gse47961	         0.362125769		        0.016672453		      FALSE
-A-ca-04-2009(h1n1) 24hour 23935999 gse47962	         0.015788421		        0.021166555		      FALSE
+virus_name	                                        up_pv	               down_pv	           significant
+A ca 04 2009 4daymoi-10^3 none gse37569	           0.182096096	         0.00101882	        FALSE
+A ca 04 2009 4daymoi-10^4 none gse37569	           0.177131874		        3.70E-05		         FALSE
+A ca 04 2009 4daymoi-10^5 none gse37569	           0.36438058		         0.001060413		      FALSE
+A ca 04 2009 4daymoi-10^6 none gse37569	           0.208783242		        0.000346701		      FALSE
+A ca 04 2009 7daymoi-10^3 none gse37566            0.005354735		        9.02E-05		         TRUE
+A ca 04 2009 7daymoi-10^4 none gse37569	           0.386095148		        0.000233933		      FALSE
+A ca 04 2009 7daymoi-10^5 none gse37569	           0.025806355		        4.17E-07		         FALSE
+A ca 04 2009 7daymoi-10^6 none gse37569	           7.29E-05		           0.037920773	      	FALSE
+A-ca-04-2009(h1n1) 0hour 23935999 gse47960	        0.000940501		        0.039112895	      	FALSE
+A-ca-04-2009(h1n1) 0hour 23935999 gse47961	        0.009917667		        0.28345672        	FALSE
+A-ca-04-2009(h1n1) 0hour 23935999 gse47962	        0.015496869		        0.263600009		      FALSE
+A-ca-04-2009(h1n1) 0hour none gse37571	            5.36E-07		           0.000585588		      TRUE
+A-ca-04-2009(h1n1) 0hour none gse40844	            0.036352714		        0.000331258		      FALSE
+A-ca-04-2009(h1n1) 12hour 23935999 gse47960	       0.179740369		        0.059438238		      FALSE
+A-ca-04-2009(h1n1) 12hour 23935999 gse47961	       0.017764542		        0.099488749		      FALSE
+A-ca-04-2009(h1n1) 12hour 23935999 gse47962	       0.022740275		        0.006435738		      FALSE
+A-ca-04-2009(h1n1) 12hour none gse37571	           0.209617411		        0.040131349		      FALSE
+A-ca-04-2009(h1n1) 12hour none gse40844	           0.076780207		        0.149770017		      FALSE
+A-ca-04-2009(h1n1) 18hour 23935999 gse47960	       0.073484711		        0.122512059		      FALSE
+A-ca-04-2009(h1n1) 18hour 23935999 gse47962	       0.14957818		         0.48625422		       FALSE
+A-ca-04-2009(h1n1) 18hour none gse37571	           0.109838766		        0.00342517		       FALSE
+A-ca-04-2009(h1n1) 24hour 23935999 gse47960	       0.045645781		        0.009625315		      FALSE
+A-ca-04-2009(h1n1) 24hour 23935999 gse47961	       0.362125769		        0.016672453		      FALSE
+A-ca-04-2009(h1n1) 24hour 23935999 gse47962	       0.015788421		        0.021166555		      FALSE
 
 
 
