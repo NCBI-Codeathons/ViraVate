@@ -97,7 +97,7 @@ ViraVate outputs a tabular file containing the virus names, directionality p val
 
 For a sample dataset, we sampled the output and tallied the virus names.
 
-![output_breakdown](Figures/viravate_out.png)
+![output_breakdown](Figures/viravate_out_breakdown.png)
 
 # RNAseq Analysis
 
