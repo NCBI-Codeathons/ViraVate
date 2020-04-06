@@ -1,12 +1,12 @@
-# Purpose of script is to convert Ensembl gene ids in Gene expression matrix (GEM) to Gene Symbols
-# The script will put Gene symbols in the 2nd column
-# Run this script with: 'Rscript convertid.R GEM'
+# Purpose of script is to convert IDs in Gene expression matrix (GEM) from Symbols to Ensemble gene ids (or vice versa)
+# The script will put converted IDs in the 2nd column
+# Run this script with: 'Rscript convertid.R GEM [symbol|gene_id]'
 # first line of GEM needs to have column names that are unique
-# the first column of GEM contains the Ensembl gene ids
+# the first column of GEM contains the IDs that you want converted
  
 args <- commandArgs(trailingOnly = TRUE)
 file = args[1]
-idtype = "symbol"   # convert ensembl gene id to this type: Values "symbol", "entrezid"
+idtype = args[2] # convert ID to this type: Values "symbol" or "gene_id" (Ensemble Gene ID)
 
 library(ensembldb)
 library(EnsDb.Hsapiens.v86)
@@ -17,10 +17,14 @@ mycolnames = colnames(egids)
 #length(ids); length(unique(ids))
 
 edb <- EnsDb.Hsapiens.v86
-foo = genes(edb, filter = GeneIdFilter(ids))  # some IDs might not be found so nrow of Foo can be less than length of 'ids'
-
-mymerge = merge(egids, foo, by.x = mycolnames[1], by.y = 'gene_id', all.x = T)
-#dim(mymerge)
+if (idtype == "gene_id") {
+ foo = genes(edb, filter = SymbolFilter(ids))  # some IDs might not be found so nrow of Foo can be less than length of 'ids'
+ mymerge = merge(egids, foo, by.x = mycolnames[1], by.y = 'symbol', all.x = T)
+} else {
+ foo = genes(edb, filter = GeneIdFilter(ids))  # some IDs might not be found so nrow of Foo can be less than length of 'ids'
+ mymerge = merge(egids, foo, by.x = mycolnames[1], by.y = 'gene_id', all.x = T)
+ #dim(mymerge)
+}
 
 selectcols = c(mycolnames[1], idtype)
 if(length(mycolnames) > 1) {
