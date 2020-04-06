@@ -93,7 +93,7 @@ This example is inspired by GSECA. [1]
 
 ViraVate outputs a tabular file containing the virus names, directionality p values (up or down in expression) and a logical significance value. 
 
-![viravate_out](Figures/viravate_out.pdf)
+![viravate_out](Figures/viravate_out.png)
 
 # RNAseq Analysis
 
@@ -117,7 +117,7 @@ https://www.disgenet.org/home/
 
 
 
-![rheum_arth_intersection](Figures/rheum_athrit_intersection.pdf)
+![rheum_arth_intersection](Figures/rheum_athrit_intersection.png)
 
 
 
