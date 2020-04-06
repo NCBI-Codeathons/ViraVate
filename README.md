@@ -95,6 +95,10 @@ ViraVate outputs a tabular file containing the virus names, directionality p val
 
 ![viravate_out](Figures/viravate_out.png)
 
+For a sample dataset, we sampled the output and tallied the virus names.
+
+![output_breakdown](Figures/viravate_out_breakdown.png)
+
 # RNAseq Analysis
 
 ViraVate represents an infrastructure that allows researchers to determine if control and experimental groups have different viral infection derived variants.  Having clear genetic variants of interest will facilitate longitudinal studies that can methodologically quantify the association between viral infection and future health complications.
@@ -118,7 +122,6 @@ https://www.disgenet.org/home/
 
 
 ![rheum_arth_intersection](Figures/rheum_athrit_intersection.png)
-
 
 
 # References
