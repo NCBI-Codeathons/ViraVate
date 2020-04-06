@@ -89,6 +89,12 @@ ENSG00000000068         0.78         0.95         0.77         0.77    ...
 
 This example is inspired by GSECA. [1]
 
+# Sample Output
+
+ViraVate outputs a tabular file containing the virus names, directionality p values (up or down in expression) and a logical significance value. 
+
+![viravate_out](Figures/viravate_out.pdf)
+
 # RNAseq Analysis
 
 ViraVate represents an infrastructure that allows researchers to determine if control and experimental groups have different viral infection derived variants.  Having clear genetic variants of interest will facilitate longitudinal studies that can methodologically quantify the association between viral infection and future health complications.
@@ -101,14 +107,17 @@ Performing a PCA analysis on the genes that had a large and significant change i
 
 ![PCA](Figures/PCA.png)
 
-Heat maps of the top 50 genes from the first component of the  PCA analysis indicate that there are clear differences in gene expression between infected and controls for some (e.g., hep3, pasnfalcip) but not all infections. This could suggest that not all infections changes gene expression or that gene expression may only be changed in a subset of individuals.
+Heat maps of the top 50 genes from the first component of the  PCA analysis indicate that there are clear differences in gene expression between infected and controls for some (e.g., hep3, pasnfalcip) but not all infections. This could suggest that not all infections changes gene expression or that gene expression may only be changed in a subset of individuals. 
 
 ![HeatMapsV2](Figures/HeatMapsV2.png)
 
-Here you can see the differentially expressed genes for three different infections. Note the we identified several differentially expressed genes that were common to all three infections.
+Raw counts from two hepatitis C infected studies were retrieved from NCBI GEO database and independently tested with edgeR. Significantly differentially expressed genes were intersected with genes associated with rheumatoid arthritis (from DisGenNET) and enriched with ShinyGO v0.61. 
 
 https://www.disgenet.org/home/
-![shared_genes.001](Figures/shared_genes.001.jpeg)
+![rheum_athrit_intersection](Figures/rheum_athrit_intersection.pdf)
+
+
+
 
 # References
 
