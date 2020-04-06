@@ -38,6 +38,8 @@ additional_gene_sets= "cereda.158.KEGG.gmt" <br/>
 
 Note that all input files must be in the same directory as viravate.sh.
 
+Also note that gene IDs should be converted to ensemble IDs prior to submitting your GEM to ViraVate.
+
 ```console
 $ ./viravate.sh -e small_m.tsv -c small_l.tsv -g cereda.158.KEGG.gmt
 ```
