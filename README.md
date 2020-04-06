@@ -93,7 +93,7 @@ This example is inspired by GSECA. [1]
 
 ViraVate outputs a tabular file containing the virus names, directionality p values (up or down in expression) and a logical significance value. 
 
-![viravate_out](Figures/viravate_out.pdf)
+![viravate_out](Figures/viravate_out.png)
 
 # RNAseq Analysis
 
@@ -114,7 +114,7 @@ Heat maps of the top 50 genes from the first component of the  PCA analysis indi
 Raw counts from two hepatitis C infected studies were retrieved from NCBI GEO database and independently tested with edgeR. Significantly differentially expressed genes were intersected with genes associated with rheumatoid arthritis (from DisGenNET) and enriched with ShinyGO v0.61. 
 
 https://www.disgenet.org/home/
-![rheum_athrit_intersection](Figures/rheum_athrit_intersection.pdf)
+![rheum_athrit_intersection](Figures/rheum_athrit_intersection.png)
 
 
 
