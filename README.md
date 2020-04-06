@@ -6,7 +6,7 @@ a.k.a. Virus Seer
 
 ViraVate is a command-line tool to identify whether differences between a user-provided gene expression matrix of any case vs. control (e.g. diabetics vs. non-diabetics) are associated with differentially expressed genes in infected vs. uninfected groups across a database of human-viral infections.
 
-With ViraVate, you have a simple and fast solution to identify viral infection derived variants in data you already have. 
+With ViraVate, you have a simple and fast solution to identify viruses that present with similar expression profiles to the data you already have. 
 
 # How to set up ViraVate:
 
