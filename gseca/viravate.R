@@ -91,6 +91,9 @@ if (ags != "NULL") {
 # Gene expression matrix
 gene_expression_matrix = read.delim(gem)
 
+#NEW CODE - should fix ensembl ids when dots exist (causes problems when searching against gencode in GSECA), and leave unmodified when no dots exist
+gene_expression_matrix$ensembl_gene_id = sapply(strsplit(gene_expression_matrix$ensembl_gene_id, '\\.'),'[[',1) 
+
 # Sample label list
 case_ctrl_list = read.delim(ccl)[,1]
 
