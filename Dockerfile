@@ -41,7 +41,7 @@ RUN apt-get install --yes \
 
 RUN pip3 install numpy pandas
 
-RUN git clone https://github.com/matteocereda/GSECA.git
+RUN git lfs clone https://github.com/matteocereda/GSECA.git
 
 ADD https://api.github.com/repos/NCBI-Codeathons/ViraVate/git/refs/heads/master version.json
 RUN git clone https://github.com/NCBI-Codeathons/ViraVate
