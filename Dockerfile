@@ -49,7 +49,7 @@ RUN git clone https://github.com/NCBI-Codeathons/ViraVate
 ENV PATH "$PATH:/ViraVate/gseca"
 
 CMD cd /GSECA \
-  && ls 
+  && ls \
   && Rscript /ViraVate/gseca/viravate.R \
   && rm Results/*analysis/*rds \
   && mv viravate.out viravate.err Results/*analysis/* /home/results
